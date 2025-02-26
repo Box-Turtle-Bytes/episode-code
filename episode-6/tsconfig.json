@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["es2020", "dom"],
+    "outDir": "lib",
+    "typeRoots": ["./node_modules/@types"],
+    "alwaysStrict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveSymlinks": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false
+  }
+}
