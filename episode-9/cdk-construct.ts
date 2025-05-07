@@ -51,6 +51,7 @@ export class BedrockKnowledgeBaseStack extends Stack {
             version: queryFunction.currentVersion,
         });
         alias.addFunctionUrl({
+
             invokeMode: InvokeMode.RESPONSE_STREAM,
         });
     }
