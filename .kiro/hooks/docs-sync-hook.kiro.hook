@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "name": "Documentation Sync",
+  "description": "Listens to source file changes across the repository and triggers documentation updates in README or docs folder",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.ts",
+      "**/*.cs",
+      "**/*.js",
+      "**/*.py",
+      "**/*.java",
+      "**/*.go",
+      "**/*.rs",
+      "**/package.json",
+      "**/tsconfig.json",
+      "**/cdk.json",
+      "**/*.yaml",
+      "**/*.yml"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Source files have been modified in the repository. Please review the changes and update the documentation accordingly. If there's a README.md file in the root or episode folders, update it to reflect any new functionality, API changes, or architectural modifications. If there's a dedicated /docs folder, update the relevant documentation files there instead. Focus on keeping the documentation accurate and up-to-date with the current codebase."
+  }
+}
