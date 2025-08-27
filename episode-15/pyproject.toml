@@ -1,0 +1,22 @@
+[project]
+name = "episode-15"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=1.102.0",
+    "strands-agents>=1.6.0",
+    "strands-agents-tools>=0.2.5",
+]
+
+[project.optional-dependencies]
+a2a = [
+    "strands-agents>=1.6.0",
+]
+openai = [
+    "strands-agents>=1.6.0",
+]
+a2a-client = [
+    "strands-agents-tools>=0.2.5",
+]
